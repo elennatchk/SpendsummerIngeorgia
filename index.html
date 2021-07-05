@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Elene">
+    <title>Georgia</title>
+     <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Righteous" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e391ce7786.js" crossorigin="anonymous"></script>
+    <script src="JS/app.js" defer></script>
+    <script src="JS/map.js" defer></script>
+    <script src="JS/animation.js" defer></script>
+</head>
+
+<body style="background-image: url('images/georgia.png');">
+        <!--Header section.-->
+        <header class="header">
+            <a  href="#"><h1 id="logo" >Georgia</h1></a>
+            <nav class="navbar">
+                <a href="#" class="nav-link" onclick="removeNav()">Home</a>
+                <a href="#about" class="nav-link" onclick="removeNav()">About</a>
+                <div class="dropdown">
+                <a href="#discover" id="drop" class="nav-link" onclick="removeNav()" onmouseout="dropdown2()" onmouseover="dropdown1()">Places </a>
+                   <div class="dropdown-content" onmouseout="dropdown2()" onmouseover="dropdown1()">
+                       <a  href="#discover" class="drop-btn">Batumi</a>
+                       <a href="#discover" class="drop-btn1">Mtskheta</a>
+                       <a href="#discover" class="drop-btn2">Tbilisi</a>
+                   </div>
+                </div>
+                <a href="#map" class="active" onclick="removeNav()">Map</a>
+               
+            </nav>
+            <div class="toggle">
+                <button><i class="fas fa-bars"></i></button>
+            </div>
+        </header>
+
+       <!--Home section-->
+        <section id="home">
+            <h2 id="title">Spend Summer In  <span>Georgia</span></h2>
+            <p>Choosing <span>Georgia</span> means a good traveling choice for you. you will 
+                spend less money, and get the best traveling experience by visiting beauthiful places of the country.
+            </p>
+            <a href="#counters" id="home-btn">Map</a>
+        </section>
+       
+        <!--About section-->
+        <section id="about">
+            <h2 id="aboutitle">About
+                <span>Georgia</span></h2>
+            <span id="line"></span>
+            <!--1st-->
+            <div class="column">
+
+                <div class="text">
+                <h2>What is <span>Georgia</span> ?</h2>
+                <p>
+                    Georgia is one of the oldest wine-producing countries in the world; local winemaking traditions are 
+                    entwined with Georgia's national identity,
+                    and have been classified by UNESCO as part of the world's Intangible Cultural Heritage.</p>
+                </div>
+
+                <img src="images/wine_country.png" alt="Morocco-flag">
+            </div>
+             <!--2nd-->
+            <div class="column">
+
+                <div class="text">
+                    <h2>What <span>Georgia</span> Offers for Tourists ?</h2>
+                    <p>
+                        It's all about nature here.
+                         Despite its small size, Georgia has all kinds of
+                          climate zones including deserts, ski resorts, Black Sea
+                           coasts and alpine zones. The country is a paradise for hiking and camping lovers 
+                        or for those who simply enjoy stunning views of the Caucasus Mountain Range. </p>
+                    </div>
+    
+                    <img src="images/turism.png" alt="place">
+            </div>
+        </section>
+         <!--Discover section-->
+         <section id="discover">
+            <h2 id="discovertitle">Best Places</h2>
+
+            <main>
+            <div class="place">
+                <a href="#"><img src="images/batumi.png" alt="batumi"></a>
+                <a href="#"><h2><i class="fas fa-map-marker-alt"></i> Batumi</h2></a>
+                <p>Batumi is the beathiful city of Georgia, people from different places of the world come to it. Batumi  is the second largest city of Georgia and the capital of the Autonomous Republic of Adjara, located on the coast of the Black Sea in Georgia's southwest.</p>
+            </div>
+
+            <div class="place">
+                <a href="#"><img src="images/mtskheta.png" alt="mtskheta"></a>
+                <a href="#"><h2><i class="fas fa-map-marker-alt"></i> Mtskheta</h2></a>
+                <p> Mtskheta is one of the oldest cities of Georgia and its former capital. Currently a small provincial capital, for nearly a millennium until the 5th century AD, Mtskheta was a large fortified city, a significant economical  centre of the Kingdom of Iberia</p>
+            </div>
+
+            <div class="place">
+                <a href="#"><img src="images/svaneti.png" alt="Svaneti"></a>
+                <a href="#"><h2><i class="fas fa-map-marker-alt"></i> Svaneti</h2></a>
+                <p>Svaneti    is a historic province of Georgia, in the northwestern part of the country. It is inhabited by the Svans, an ethnic subgroup of Georgians. The landscape of Svaneti is dominated by mountains that are separated by deep gorges. </p>
+            </div>
+        </main>
+
+           <!--Dishes section-->
+           <section id="discover">
+            <h2 id="discovertitle">Georgian Dishes</h2>
+
+            <main>
+            <div class="place">
+                <a href="#"><img src="images/khinkali.png" alt="khinkali"></a>
+                <a href="#"><h2>  Khinkali</h2></a>
+                <p>Khinkali is a Georgian dumpling, which originated in the Georgian mountain regions of Pshavi, Tusheti  and Khevsureti.   
+                    The original recipe, the so-called khevsuruli, consisted of only minced meat , onions, chili pepper, salt, and cumin. </p>
+            </div>
+
+            <div class="place">
+                <a href="#"><img src="images/adjarian_khatchapuri.png" alt="marrakech"></a>
+                <a href="#"><h2> Adjarian Khatchapuri</h2></a>
+                <p>Khachapuri   is a traditional Georgian dish of cheese-filled bread. The bread is leavened and allowed to rise and is shaped in various ways, usually
+                 with cheese in the middle and a crust which is ripped off and used to dip in the cheese. </p>
+            </div>
+
+            <div class="place">
+                <a href="#"><img src="images/chakapuli.jpg" alt="chakapuli"></a>
+                <a href="#"><h2> </i> Chakapuli</h2></a>
+                <p>Chakapuli  is a Georgian  dish. It is considered to be one of the most popular dishes in Georgia. It is made from lamb chops , onions, tarragon leaves,tkemali, white wine,  garlic and salt. Chakapuli can also be made with  mushrooms instead of lamb.</p>
+            </div>
+        </main>
+  
+        
+        <!--Counter Section-->
+        <section id="counters">
+            <div class="container">
+            <div class="box">
+                <i class="fas fa-user-alt"></i>
+                <div class="counter" >3732000</div>
+                <h2>Population</h2>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-city"></i>
+                <div class="counter" >535</div>
+                <h2>Cities</h2>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-chart-area"></i>
+                <div class="counter" >69700</div><span>Km²</span>
+                <h2>Area</h2>
+            </div>
+        </div>
+        </section>
+
+        <section  id="map">
+            <script>
+                function initMap() {
+                 let georgia= {lat:41.716667, lng:44.783333};
+                 let mtskheta= {lat:41.8412, lng:44.7074};
+                 let map = new google.maps.Map(document.getElementById('map'),{zoom:8,center: georgia}
+
+                 );
+                 let marker= new google.maps.Marker({position:georgia, map:map})
+                
+                  }
+ 
+            </script>
+            <div id="map"></div>
+            <script async  defer  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu2WblxDu2s1zapKvOcgxfiTBrNge-x-0&callback=initMap"> </script>
+        </section>
+
+        
+
+       
+<!--Footer Section-->
+         <footer>
+       
+        <div class="container-footer">
+               <div class="footer">
+                    <div class="copyright">
+                        © 2020 All rights reserved  | <a href="">Spend Summer in Georgia</a>
+                    </div>
+
+                    <div class="information">
+                        <a href="">Information </a> | <a href="">Privacy politic</a> | <a href="">Terms and Conditions</a>
+                    </div>
+                </div>
+
+            </div>
+        
+    </footer>
+
+        
+</body>
+</html>
+
